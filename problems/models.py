@@ -12,6 +12,9 @@ class Problem(models.Model):
 	sample_output = models.TextField()
 	time_limit = models.FloatField(default=1.0)  # Time limit for code execution in seconds
 
+	def __str__(self):
+		return self.title
+
 
 
 
